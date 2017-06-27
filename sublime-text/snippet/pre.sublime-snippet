@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+echo "<pre>";
+echo '<pre style="background:black; color:white; font-size:16px; font-weight:bold; direction:ltr!important; text-align:left;">';
+@print_r(${1:\$variable});
+echo "</pre>";
+echo "<hr />";
+exit();
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>pre</tabTrigger> 
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

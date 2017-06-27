@@ -1,0 +1,18 @@
+{
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"dictionary": "Packages/Language – Spanish/Spanish.dic",
+	"draw_white_space": "all",
+	"font_size": 8,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_active"
+	],
+	"show_errors_on_save": true,
+	"tab_size": 4,
+	"theme": "Seti_orig.sublime-theme"
+}
