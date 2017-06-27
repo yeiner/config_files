@@ -38,23 +38,21 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'scrooloose/nerdcommenter'
 
  "Plugins Javascript 
- Plugin 'heavenshell/vim-jsdoc'
- Plugin 'pangloss/vim-javascript'
- Plugin 'othree/javascript-libraries-syntax.vim'
- "Json 
- Plugin 'elzr/vim-json'
- 
- "Html
- Plugin 'othree/html5.vim'
- "Php
- Plugin 'stanangeloff/php.vim'
- Plugin 'shawncplus/phpcomplete.vim'
- 
- Plugin 'majutsushi/tagbar'
- Plugin 'yggdroot/indentline'
+Plugin 'heavenshell/vim-jsdoc'
+Plugin 'pangloss/vim-javascript'
+Plugin 'othree/javascript-libraries-syntax.vim'
+"Json 
+Plugin 'elzr/vim-json'
 
+"Html
+Plugin 'othree/html5.vim'
+"Php
+Plugin 'stanangeloff/php.vim'
+Plugin 'shawncplus/phpcomplete.vim'
 
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'majutsushi/tagbar'
+Plugin 'yggdroot/indentline'
+
 Plugin 'valloric/youcompleteme'
 
 Plugin 'vim-airline/vim-airline-themes'
