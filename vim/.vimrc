@@ -22,12 +22,8 @@ Plugin 'scrooloose/nerdtree'
 "Buscar archivos Ctrl + P
 Plugin 'kien/ctrlp.vim'
 
-"Sintaxis
-Plugin 'scrooloose/syntastic'
-
 "Barra de estado
 Plugin 'vim-airline/vim-airline'
-
 
 " Git plugins
 Plugin 'tpope/vim-fugitive'
@@ -49,6 +45,15 @@ Plugin 'othree/html5.vim'
 "Php
 Plugin 'stanangeloff/php.vim'
 Plugin 'shawncplus/phpcomplete.vim'
+Plugin 'sumpygump/php-documentor-vim'
+Plugin 'spf13/PIV'
+Plugin 'stephpy/vim-php-cs-fixer'
+Plugin 'vim-php/vim-php-refactoring'
+Plugin 'arnaud-lb/vim-php-namespace'
+Plugin 'tomphp/vim-phpdoc'
+Plugin 'mikehaertl/pdv-standalone'
+Plugin 'Shougo/unite.vim'
+Plugin 'docteurklein/php-getter-setter.vim'
 
 Plugin 'majutsushi/tagbar'
 Plugin 'yggdroot/indentline'
@@ -61,6 +66,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'junegunn/vim-easy-align'
 
+Plugin 'tpope/vim-surround'
 ""C++
 Plugin 'c.vim'
 
@@ -89,6 +95,8 @@ set expandtab
 set laststatus=2
 "Change realtime files
 set updatetime=250
+"Directorio actual.
+set autochdir
 "Themes 
 colorscheme monokai
 
@@ -101,7 +109,11 @@ let g:used_javascript_libs = 'jquery'
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 nmap <F8> :TagbarToggle<CR>
-
+"Mover linea abajo o arriba 
+nnoremap <S-Up> :m-2<CR>
+nnoremap <S-Down> :m+<CR>
+inoremap <S-Up> <Esc>:m-2<CR>
+inoremap <S-Down> <Esc>:m+<CR>
 "End Config Yeiner
 "Php
 
