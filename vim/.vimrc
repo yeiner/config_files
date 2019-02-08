@@ -69,6 +69,8 @@ Plugin 'junegunn/vim-easy-align'
 Plugin 'tpope/vim-surround'
 ""C++
 Plugin 'c.vim'
+"Recuperar cambios 
+Plugin 'mbbill/undotree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -114,6 +116,8 @@ nnoremap <S-Up> :m-2<CR>
 nnoremap <S-Down> :m+<CR>
 inoremap <S-Up> <Esc>:m-2<CR>
 inoremap <S-Down> <Esc>:m+<CR>
+"Control Z 
+nnoremap <F5> :UndotreeToggle<cr>
 "End Config Yeiner
 "Php
 
