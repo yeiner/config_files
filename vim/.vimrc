@@ -41,6 +41,7 @@ Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'elzr/vim-json'
 
 "Html
+Plugin 'mattn/emmet-vim'
 Plugin 'othree/html5.vim'
 "Php
 Plugin 'stanangeloff/php.vim'
@@ -70,7 +71,10 @@ Plugin 'tpope/vim-surround'
 ""C++
 Plugin 'c.vim'
 "Recuperar cambios 
-Plugin 'mbbill/undotree'
+Plugin 'mbbill/undotree' 
+"React 
+Plugin 'mxw/vim-jsx'
+Plugin 'maxmellon/vim-jsx-pretty'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
