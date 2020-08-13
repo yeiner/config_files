@@ -4,6 +4,17 @@
 "Cofiguración Vundle
 
 set nocompatible            " be iMproved, required
+set nolist
+" Display 5 lines above/below the cursor when scrolling with a mouse.
+set scrolloff=5
+" Speed up scrolling in Vim
+set ttyfast
+"Ver lineas relativas up / down
+set rnu
+" Vim 7.4.2201
+"set signcolumn=yes
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ [BUFFER=%n]\ %{strftime('%c')}
+
 filetype off                " required
 
 " set the runtime path to include Vundle and initialize
@@ -21,6 +32,8 @@ Plugin 'scrooloose/nerdtree'
 
 "Buscar archivos Ctrl + P
 Plugin 'kien/ctrlp.vim'
+"Buscar 
+Plugin 'junegunn/fzf'
 
 "Barra de estado
 Plugin 'vim-airline/vim-airline'
@@ -85,6 +98,7 @@ filetype plugin indent on    " required
 
 "Configuracion Yeiner 
 set number
+
 syntax on
 " Para aplicar una sangría de dos espacios (en lugar de una ficha de ocho
 " espacios)
@@ -103,6 +117,8 @@ set laststatus=2
 set updatetime=250
 "Directorio actual.
 set autochdir
+"Reload File
+set autoread
 "Themes 
 colorscheme monokai
 
@@ -122,6 +138,16 @@ inoremap <S-Up> <Esc>:m-2<CR>
 inoremap <S-Down> <Esc>:m+<CR>
 "Control Z 
 nnoremap <F5> :UndotreeToggle<cr>
+
+"Conffig fzf If installed using Homebrew
+set rtp+=/usr/local/opt/fzf
+
+" If installed using git
+set rtp+=~/.fzf
+"End config fzf
+"Open NerdTree 
+map <C-b> :NERDTreeToggle<CR>
+
 "End Config Yeiner
 "Php
 
